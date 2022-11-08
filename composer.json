@@ -1,0 +1,25 @@
+{
+  "name": "caiomarcatti12/queuemanager",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Caio Marcatti",
+      "email": "caiomarcatti12@gmail.com"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "CaioMarcatti12\\QueueManager\\" :  "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "caiomarcatti12/core": "dev-master",
+    "caiomarcatti12/env": "dev-master",
+    "caiomarcatti12/data": "dev-master",
+    "caiomarcatti12/cli": "dev-master",
+    "php-amqplib/php-amqplib": "^v3.2.0"
+  }
+}
