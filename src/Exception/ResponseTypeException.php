@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Webserver\Exception;
+namespace CaioMarcatti12\QueueManager\Exception;
 
 use CaioMarcatti12\Core\Bean\Annotation\AliasFor;
 use CaioMarcatti12\Core\Bean\Enum\BeanType;

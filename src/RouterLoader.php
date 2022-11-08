@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Webserver;
+namespace CaioMarcatti12\QueueManager;
 
 use CaioMarcatti12\Core\ExtractPhpNamespace;
 use CaioMarcatti12\Core\Launcher\Annotation\Launcher;

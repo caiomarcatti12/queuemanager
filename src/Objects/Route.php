@@ -2,7 +2,8 @@
 
 namespace CaioMarcatti12\QueueManager\Objects;
 
-use CaioMarcatti12\Webserver\Exception\InvalidArgumentRouteConstruct;
+
+use CaioMarcatti12\QueueManager\Exception\InvalidArgumentRouteConstruct;
 
 class Route
 {
