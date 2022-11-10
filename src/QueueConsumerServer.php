@@ -2,6 +2,7 @@
 
 namespace CaioMarcatti12\QueueManager;
 
+use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
 use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Factory\Invoke;
@@ -15,8 +16,13 @@ class QueueConsumerServer
     #[Autowired]
     protected QueueManager $queueManager;
 
-    public function run($queue): void
+    #[Autowired]
+    protected ArgvParserInterface $argvParser;
+
+    public function run(): void
     {
+        $queue = $this->argvParser->get('queue', '');
+
         $route = RoutesQueue::getRoute($queue);
 
         if(Assert::isEmpty($route)) throw new RouteNotFoundException($queue);

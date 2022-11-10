@@ -4,20 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b83b57d0dcce73f944d48f4334863c40",
+    "content-hash": "b13f236b3ae1a1dc87712f366bfa8bae",
     "packages": [
+        {
+            "name": "caiomarcatti12/cli",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caiomarcatti12/cli.git",
+                "reference": "376026866bab9a763a33b492a589d1df11cd9433"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caiomarcatti12/cli/zipball/376026866bab9a763a33b492a589d1df11cd9433",
+                "reference": "376026866bab9a763a33b492a589d1df11cd9433",
+                "shasum": ""
+            },
+            "require": {
+                "caiomarcatti12/core": "dev-master",
+                "phalcon/cli-options-parser": "1.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CaioMarcatti12\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caio Marcatti",
+                    "email": "caiomarcatti12@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/caiomarcatti12/cli/issues",
+                "source": "https://github.com/caiomarcatti12/cli/tree/master"
+            },
+            "time": "2022-11-10T11:05:14+00:00"
+        },
         {
             "name": "caiomarcatti12/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/core.git",
-                "reference": "162aa295d506b480a2bcb83d76a52f3434fafa79"
+                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/162aa295d506b480a2bcb83d76a52f3434fafa79",
-                "reference": "162aa295d506b480a2bcb83d76a52f3434fafa79",
+                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/b2e9461a9401945a097b490a089d36cf41b3b3c7",
+                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7",
                 "shasum": ""
             },
             "default-branch": true,
@@ -41,7 +82,7 @@
                 "issues": "https://github.com/caiomarcatti12/core/issues",
                 "source": "https://github.com/caiomarcatti12/core/tree/master"
             },
-            "time": "2022-11-06T13:05:37+00:00"
+            "time": "2022-11-10T11:05:33+00:00"
         },
         {
             "name": "caiomarcatti12/data",
@@ -89,12 +130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/env.git",
-                "reference": "234dbc7f63b087f7953c302ca2e0f976471301c7"
+                "reference": "6a6108b4a02b738257a3e73b8bd85633a6115581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/env/zipball/234dbc7f63b087f7953c302ca2e0f976471301c7",
-                "reference": "234dbc7f63b087f7953c302ca2e0f976471301c7",
+                "url": "https://api.github.com/repos/caiomarcatti12/env/zipball/6a6108b4a02b738257a3e73b8bd85633a6115581",
+                "reference": "6a6108b4a02b738257a3e73b8bd85633a6115581",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +162,7 @@
                 "issues": "https://github.com/caiomarcatti12/env/issues",
                 "source": "https://github.com/caiomarcatti12/env/tree/master"
             },
-            "time": "2022-11-06T12:51:11+00:00"
+            "time": "2022-11-08T23:32:05+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -239,6 +280,84 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "phalcon/cli-options-parser",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phalcon/cli-options-parser.git",
+                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phalcon/cli-options-parser/zipball/1c5a7d0db23a88d8ba14646af75464cbbd115251",
+                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.8",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\Cop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "https://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/cli-options-parser/graphs/contributors"
+                }
+            ],
+            "description": "Command line arguments/options parser.",
+            "homepage": "https://phalconphp.com",
+            "keywords": [
+                "argparse",
+                "cli",
+                "command",
+                "command-line",
+                "getopt",
+                "line",
+                "option",
+                "optparse",
+                "parser",
+                "terminal"
+            ],
+            "support": {
+                "forum": "https://forum.phalconphp.com/",
+                "issues": "https://github.com/phalcon/cli-options-parser/issues",
+                "source": "https://github.com/phalcon/cli-options-parser"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/phalcon",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/phalcon",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-08-03T02:44:01+00:00"
         },
         {
             "name": "php-amqplib/php-amqplib",
@@ -438,7 +557,8 @@
     "stability-flags": {
         "caiomarcatti12/core": 20,
         "caiomarcatti12/env": 20,
-        "caiomarcatti12/data": 20
+        "caiomarcatti12/data": 20,
+        "caiomarcatti12/cli": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
