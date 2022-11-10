@@ -6,11 +6,13 @@ use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
 use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Factory\Invoke;
+use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
 use CaioMarcatti12\Core\Validation\Assert;
 use CaioMarcatti12\Data\Request\Objects\Body;
 use CaioMarcatti12\QueueManager\Objects\RoutesQueue;
 use CaioMarcatti12\Webserver\Exception\RouteNotFoundException;
 
+#[Launcher]
 class QueueConsumerServer
 {
     #[Autowired]
