@@ -24,7 +24,7 @@ class QueueConsumerServer
     #[Autowired]
     protected ArgvParserInterface $argvParser;
 
-    public function run(): void
+    public function handler(): void
     {
         if(!Modules::isEnabled(ModulesEnum::QUEUE_MANAGER)) return;
 
