@@ -28,7 +28,6 @@ class QueueConsumerServer
     {
         if(!Modules::isEnabled(ModulesEnum::QUEUE_MANAGER)) return;
 
-
         $queue = $this->argvParser->get('queue', '');
 
         $route = RoutesQueue::getRoute($queue);
