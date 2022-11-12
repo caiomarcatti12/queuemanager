@@ -28,6 +28,10 @@ class RoutesQueue
         return array_shift($route);
     }
 
+    public static function getAll(): array{
+        return self::$routes;
+    }
+
     public static function destroy(): void{
         self::$routes = [];
     }
