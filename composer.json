@@ -19,7 +19,6 @@
     "caiomarcatti12/core": "dev-master",
     "caiomarcatti12/env": "dev-master",
     "caiomarcatti12/data": "dev-master",
-    "caiomarcatti12/cli": "dev-master",
     "php-amqplib/php-amqplib": "^v3.2.0"
   }
 }

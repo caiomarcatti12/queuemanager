@@ -4,48 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b13f236b3ae1a1dc87712f366bfa8bae",
+    "content-hash": "b83b57d0dcce73f944d48f4334863c40",
     "packages": [
         {
-            "name": "caiomarcatti12/cli",
-            "version": "dev-master",
+            "name": "brick/math",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/caiomarcatti12/cli.git",
-                "reference": "376026866bab9a763a33b492a589d1df11cd9433"
+                "url": "https://github.com/brick/math.git",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/cli/zipball/376026866bab9a763a33b492a589d1df11cd9433",
-                "reference": "376026866bab9a763a33b492a589d1df11cd9433",
+                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
                 "shasum": ""
             },
             "require": {
-                "caiomarcatti12/core": "dev-master",
-                "phalcon/cli-options-parser": "1.3"
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
             },
-            "default-branch": true,
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^9.0",
+                "vimeo/psalm": "4.25.0"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "CaioMarcatti12\\Cli\\": "src/"
+                    "Brick\\Math\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Caio Marcatti",
-                    "email": "caiomarcatti12@gmail.com"
-                }
+            "description": "Arbitrary-precision arithmetic library",
+            "keywords": [
+                "Arbitrary-precision",
+                "BigInteger",
+                "BigRational",
+                "arithmetic",
+                "bigdecimal",
+                "bignum",
+                "brick",
+                "math"
             ],
             "support": {
-                "issues": "https://github.com/caiomarcatti12/cli/issues",
-                "source": "https://github.com/caiomarcatti12/cli/tree/master"
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.10.2"
             },
-            "time": "2022-11-10T11:05:14+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-10T22:54:19+00:00"
         },
         {
             "name": "caiomarcatti12/core",
@@ -53,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/core.git",
-                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7"
+                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/b2e9461a9401945a097b490a089d36cf41b3b3c7",
-                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7",
+                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
+                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
                 "shasum": ""
             },
             "default-branch": true,
@@ -82,7 +97,7 @@
                 "issues": "https://github.com/caiomarcatti12/core/issues",
                 "source": "https://github.com/caiomarcatti12/core/tree/master"
             },
-            "time": "2022-11-10T11:05:33+00:00"
+            "time": "2022-11-11T20:54:16+00:00"
         },
         {
             "name": "caiomarcatti12/data",
@@ -90,16 +105,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/data.git",
-                "reference": "64146badb5ca2d236672a4502aa2c57946a3c5a9"
+                "reference": "0b15ac7743ba5d6c47c698fd93c62d8c105e11de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/64146badb5ca2d236672a4502aa2c57946a3c5a9",
-                "reference": "64146badb5ca2d236672a4502aa2c57946a3c5a9",
+                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/0b15ac7743ba5d6c47c698fd93c62d8c105e11de",
+                "reference": "0b15ac7743ba5d6c47c698fd93c62d8c105e11de",
                 "shasum": ""
             },
             "require": {
-                "ext-mongodb": "*"
+                "ext-mongodb": "*",
+                "ramsey/uuid": "5.x-dev"
             },
             "default-branch": true,
             "type": "library",
@@ -122,7 +138,7 @@
                 "issues": "https://github.com/caiomarcatti12/data/issues",
                 "source": "https://github.com/caiomarcatti12/data/tree/master"
             },
-            "time": "2022-11-04T18:15:56+00:00"
+            "time": "2022-11-11T21:15:40+00:00"
         },
         {
             "name": "caiomarcatti12/env",
@@ -280,84 +296,6 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
-        },
-        {
-            "name": "phalcon/cli-options-parser",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phalcon/cli-options-parser.git",
-                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phalcon/cli-options-parser/zipball/1c5a7d0db23a88d8ba14646af75464cbbd115251",
-                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5.8",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Phalcon\\Cop\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Phalcon Team",
-                    "email": "team@phalconphp.com",
-                    "homepage": "https://phalconphp.com/en/team"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/phalcon/cli-options-parser/graphs/contributors"
-                }
-            ],
-            "description": "Command line arguments/options parser.",
-            "homepage": "https://phalconphp.com",
-            "keywords": [
-                "argparse",
-                "cli",
-                "command",
-                "command-line",
-                "getopt",
-                "line",
-                "option",
-                "optparse",
-                "parser",
-                "terminal"
-            ],
-            "support": {
-                "forum": "https://forum.phalconphp.com/",
-                "issues": "https://github.com/phalcon/cli-options-parser/issues",
-                "source": "https://github.com/phalcon/cli-options-parser"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/phalcon",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/phalcon",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2021-08-03T02:44:01+00:00"
         },
         {
             "name": "php-amqplib/php-amqplib",
@@ -549,6 +487,95 @@
                 }
             ],
             "time": "2022-10-28T04:07:38+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "b34c4c34d0c9202b0fe550a7e0dee4a67f11da83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/b34c4c34d0c9202b0fe550a7e0dee4a67f11da83",
+                "reference": "b34c4c34d0c9202b0fe550a7e0dee4a67f11da83",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.8.8 || ^0.9 || ^0.10",
+                "ext-json": "*",
+                "php": "^8.1"
+            },
+            "replace": {
+                "rhumsaa/uuid": "self.version"
+            },
+            "require-dev": {
+                "captainhook/captainhook": "^5.10",
+                "captainhook/plugin-composer": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.8",
+                "ergebnis/composer-normalize": "^2.15",
+                "mockery/mockery": "^1.3",
+                "php-mock/php-mock": "^2.2",
+                "php-mock/php-mock-mockery": "^1.3",
+                "php-parallel-lint/php-parallel-lint": "^1.1",
+                "phpbench/phpbench": "^1.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.16.1",
+                "slevomat/coding-standard": "^8.4",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.22"
+            },
+            "suggest": {
+                "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
+                "ext-gmp": "Enables faster math with arbitrary-precision integers using GMP.",
+                "ext-uuid": "Enables the use of PeclUuidTimeGenerator and PeclUuidRandomGenerator.",
+                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+            },
+            "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Ramsey\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP library for generating and working with universally unique identifiers (UUIDs).",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/uuid/issues",
+                "source": "https://github.com/ramsey/uuid/tree/5.x"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-09-12T22:12:23+00:00"
         }
     ],
     "packages-dev": [],
@@ -557,8 +584,7 @@
     "stability-flags": {
         "caiomarcatti12/core": 20,
         "caiomarcatti12/env": 20,
-        "caiomarcatti12/data": 20,
-        "caiomarcatti12/cli": 20
+        "caiomarcatti12/data": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

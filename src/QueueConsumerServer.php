@@ -8,27 +8,23 @@ use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Factory\Invoke;
 use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
 use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
+use CaioMarcatti12\Core\Launcher\Interfaces\LauncherInterface;
 use CaioMarcatti12\Core\Modules\Modules;
 use CaioMarcatti12\Core\Modules\ModulesEnum;
+use CaioMarcatti12\Core\Shared\Interfaces\ServerRunInterface;
 use CaioMarcatti12\Core\Validation\Assert;
 use CaioMarcatti12\Data\Request\Objects\Body;
 use CaioMarcatti12\QueueManager\Objects\RoutesQueue;
 use CaioMarcatti12\Webserver\Exception\RouteNotFoundException;
 
-#[Launcher(LauncherPriorityEnum::AFTER_LOAD_APPLICATION)]
-class QueueConsumerServer
+class QueueConsumerServer implements ServerRunInterface
 {
     #[Autowired]
     protected QueueManager $queueManager;
 
-    #[Autowired]
-    protected ArgvParserInterface $argvParser;
-
-    public function handler(): void
+    public function run($queue = ''): void
     {
         if(!Modules::isEnabled(ModulesEnum::QUEUE_MANAGER)) return;
-
-        $queue = $this->argvParser->get('queue', '');
 
         $route = RoutesQueue::getRoute($queue);
 

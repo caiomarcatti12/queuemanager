@@ -4,5 +4,5 @@ namespace CaioMarcatti12\QueueManager\Interfaces;
 
 interface QueueInterface
 {
-    public function handler(mixed $payload): void;
+    public function handler(): void;
 }
