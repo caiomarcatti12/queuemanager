@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b83b57d0dcce73f944d48f4334863c40",
+    "content-hash": "62b98c8ec67bcef50eb63d2b9e542bb0",
     "packages": [
         {
             "name": "brick/math",
@@ -64,19 +64,18 @@
         },
         {
             "name": "caiomarcatti12/core",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/core.git",
-                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9"
+                "reference": "8f7cf1edeeab75a9c0fdb94f25775998bcd45489"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
-                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
+                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/8f7cf1edeeab75a9c0fdb94f25775998bcd45489",
+                "reference": "8f7cf1edeeab75a9c0fdb94f25775998bcd45489",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -95,29 +94,28 @@
             ],
             "support": {
                 "issues": "https://github.com/caiomarcatti12/core/issues",
-                "source": "https://github.com/caiomarcatti12/core/tree/master"
+                "source": "https://github.com/caiomarcatti12/core/tree/2.0.0"
             },
-            "time": "2022-11-11T20:54:16+00:00"
+            "time": "2022-11-13T10:49:59+00:00"
         },
         {
             "name": "caiomarcatti12/data",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/data.git",
-                "reference": "0b15ac7743ba5d6c47c698fd93c62d8c105e11de"
+                "reference": "1fe0fa9d37275914fce53227b466657ba277ac0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/0b15ac7743ba5d6c47c698fd93c62d8c105e11de",
-                "reference": "0b15ac7743ba5d6c47c698fd93c62d8c105e11de",
+                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/1fe0fa9d37275914fce53227b466657ba277ac0b",
+                "reference": "1fe0fa9d37275914fce53227b466657ba277ac0b",
                 "shasum": ""
             },
             "require": {
                 "ext-mongodb": "*",
-                "ramsey/uuid": "5.x-dev"
+                "ramsey/uuid": ">=4.6.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -136,28 +134,27 @@
             ],
             "support": {
                 "issues": "https://github.com/caiomarcatti12/data/issues",
-                "source": "https://github.com/caiomarcatti12/data/tree/master"
+                "source": "https://github.com/caiomarcatti12/data/tree/2.0.0"
             },
-            "time": "2022-11-11T21:15:40+00:00"
+            "time": "2022-11-13T11:36:04+00:00"
         },
         {
             "name": "caiomarcatti12/env",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/env.git",
-                "reference": "6a6108b4a02b738257a3e73b8bd85633a6115581"
+                "reference": "22bd04a9200fc5cb9a0861993daeb0e4e7f7b2d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/env/zipball/6a6108b4a02b738257a3e73b8bd85633a6115581",
-                "reference": "6a6108b4a02b738257a3e73b8bd85633a6115581",
+                "url": "https://api.github.com/repos/caiomarcatti12/env/zipball/22bd04a9200fc5cb9a0861993daeb0e4e7f7b2d5",
+                "reference": "22bd04a9200fc5cb9a0861993daeb0e4e7f7b2d5",
                 "shasum": ""
             },
             "require": {
-                "caiomarcatti12/core": "dev-master"
+                "caiomarcatti12/core": "2.0.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -176,9 +173,9 @@
             ],
             "support": {
                 "issues": "https://github.com/caiomarcatti12/env/issues",
-                "source": "https://github.com/caiomarcatti12/env/tree/master"
+                "source": "https://github.com/caiomarcatti12/env/tree/2.0.0"
             },
-            "time": "2022-11-08T23:32:05+00:00"
+            "time": "2022-11-13T11:22:01+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -380,16 +377,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.x-dev",
+            "version": "3.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "08c27ae48aebe3e76cf4f7b3be15d2c4ddb20739"
+                "reference": "dbc2307d5c69aeb22db136c52e91130d7f2ca761"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/08c27ae48aebe3e76cf4f7b3be15d2c4ddb20739",
-                "reference": "08c27ae48aebe3e76cf4f7b3be15d2c4ddb20739",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/dbc2307d5c69aeb22db136c52e91130d7f2ca761",
+                "reference": "dbc2307d5c69aeb22db136c52e91130d7f2ca761",
                 "shasum": ""
             },
             "require": {
@@ -470,7 +467,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.17"
             },
             "funding": [
                 {
@@ -486,26 +483,106 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-28T04:07:38+00:00"
+            "time": "2022-10-24T10:51:50+00:00"
         },
         {
-            "name": "ramsey/uuid",
-            "version": "5.x-dev",
+            "name": "ramsey/collection",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "b34c4c34d0c9202b0fe550a7e0dee4a67f11da83"
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/b34c4c34d0c9202b0fe550a7e0dee4a67f11da83",
-                "reference": "b34c4c34d0c9202b0fe550a7e0dee4a67f11da83",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/cccc74ee5e328031b15640b51056ee8d3bb66c0a",
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8",
+                "symfony/polyfill-php81": "^1.23"
+            },
+            "require-dev": {
+                "captainhook/captainhook": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "ergebnis/composer-normalize": "^2.6",
+                "fakerphp/faker": "^1.5",
+                "hamcrest/hamcrest-php": "^2",
+                "jangregor/phpstan-prophecy": "^0.8",
+                "mockery/mockery": "^1.3",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1",
+                "phpstan/phpstan": "^0.12.32",
+                "phpstan/phpstan-mockery": "^0.12.5",
+                "phpstan/phpstan-phpunit": "^0.12.11",
+                "phpunit/phpunit": "^8.5 || ^9",
+                "psy/psysh": "^0.10.4",
+                "slevomat/coding-standard": "^6.3",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ramsey\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "A PHP library for representing and manipulating collections.",
+            "keywords": [
+                "array",
+                "collection",
+                "hash",
+                "map",
+                "queue",
+                "set"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/collection/issues",
+                "source": "https://github.com/ramsey/collection/tree/1.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/collection",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-10T03:01:02+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "ad63bc700e7d021039e30ce464eba384c4a1d40f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/ad63bc700e7d021039e30ce464eba384c4a1d40f",
+                "reference": "ad63bc700e7d021039e30ce464eba384c4a1d40f",
                 "shasum": ""
             },
             "require": {
                 "brick/math": "^0.8.8 || ^0.9 || ^0.10",
                 "ext-json": "*",
-                "php": "^8.1"
+                "php": "^8.0",
+                "ramsey/collection": "^1.0"
             },
             "replace": {
                 "rhumsaa/uuid": "self.version"
@@ -517,6 +594,7 @@
                 "doctrine/annotations": "^1.8",
                 "ergebnis/composer-normalize": "^2.15",
                 "mockery/mockery": "^1.3",
+                "paragonie/random-lib": "^2",
                 "php-mock/php-mock": "^2.2",
                 "php-mock/php-mock-mockery": "^1.3",
                 "php-parallel-lint/php-parallel-lint": "^1.1",
@@ -525,16 +603,17 @@
                 "phpstan/phpstan": "^1.8",
                 "phpstan/phpstan-mockery": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.1",
-                "phpunit/phpunit": "^9.5",
-                "psalm/plugin-phpunit": "^0.16.1",
+                "phpunit/phpunit": "^8.5 || ^9",
+                "ramsey/composer-repl": "^1.4",
                 "slevomat/coding-standard": "^8.4",
                 "squizlabs/php_codesniffer": "^3.5",
-                "vimeo/psalm": "^4.22"
+                "vimeo/psalm": "^4.9"
             },
             "suggest": {
                 "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
                 "ext-gmp": "Enables faster math with arbitrary-precision integers using GMP.",
                 "ext-uuid": "Enables the use of PeclUuidTimeGenerator and PeclUuidRandomGenerator.",
+                "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
             },
             "type": "library",
@@ -563,7 +642,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/5.x"
+                "source": "https://github.com/ramsey/uuid/tree/4.6.0"
             },
             "funding": [
                 {
@@ -575,18 +654,93 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-12T22:12:23+00:00"
+            "time": "2022-11-05T23:03:38+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php81",
+            "version": "v1.27.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php81.git",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/707403074c8ea6e2edaf8794b0157a0bfa52157a",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.27-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.27.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-11-03T14:55:06+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "caiomarcatti12/core": 20,
-        "caiomarcatti12/env": 20,
-        "caiomarcatti12/data": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
