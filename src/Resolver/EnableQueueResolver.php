@@ -5,9 +5,9 @@ namespace CaioMarcatti12\QueueManager\Resolver;
 use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
 use CaioMarcatti12\Core\Bean\Interfaces\ClassResolverInterface;
 use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
-use ReflectionClass;
 use CaioMarcatti12\QueueManager\Annotation\EnableQueue;
 use CaioMarcatti12\QueueManager\Interfaces\QueueManagerInterface;
+use ReflectionClass;
 
 #[AnnotationResolver(EnableQueue::class)]
 class EnableQueueResolver implements ClassResolverInterface

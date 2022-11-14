@@ -4,11 +4,10 @@ namespace CaioMarcatti12\QueueManager\Adapter;
 
 
 use CaioMarcatti12\Env\Objects\Property;
+use CaioMarcatti12\QueueManager\Interfaces\QueueManagerInterface;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
-use CaioMarcatti12\Logger\Log;
-use CaioMarcatti12\QueueManager\Interfaces\QueueManagerInterface;
 
 class RabbitMQAdapter implements QueueManagerInterface
 {
@@ -46,8 +45,6 @@ class RabbitMQAdapter implements QueueManagerInterface
                 $msg->ack();
             } catch (\Exception $e) {
                 $msg->reject();
-                Log::error($e->getMessage());
-                Log::error($e->getTraceAsString());
             }
         });
 

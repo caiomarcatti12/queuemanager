@@ -2,13 +2,8 @@
 
 namespace CaioMarcatti12\QueueManager;
 
-use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
-use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Factory\Invoke;
-use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
-use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
-use CaioMarcatti12\Core\Launcher\Interfaces\LauncherInterface;
 use CaioMarcatti12\Core\Modules\Modules;
 use CaioMarcatti12\Core\Modules\ModulesEnum;
 use CaioMarcatti12\Core\Shared\Interfaces\ServerRunInterface;
