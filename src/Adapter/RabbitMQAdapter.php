@@ -27,6 +27,18 @@ class RabbitMQAdapter implements QueueManagerInterface
         $this->channel = $this->connection->channel();
     }
 
+    public function createExchange(string $exchange, string $type = 'fanout'): void {
+        $this->channel->exchange_declare($exchange, $type, false, true, false);
+    }
+
+    public function createQueue(string $queue): void {
+            $this->channel->queue_declare($queue, false,  true, false, false);
+    }
+
+    public function bindQueueToExchange(string $exchange, string $queue, string $routingKey = ''): void {
+        $this->channel->queue_bind($exchange, $routingKey);
+    }
+
     public function publish(string $exchange, mixed $payload, array $options = []): void
     {
         $pattern = $options['pattern'] ?? '';
