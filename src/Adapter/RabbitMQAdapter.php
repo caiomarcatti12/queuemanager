@@ -3,7 +3,12 @@
 namespace CaioMarcatti12\QueueManager\Adapter;
 
 
+use CaioMarcatti12\Core\Factory\InstanceFactory;
+use CaioMarcatti12\Core\Modules\Modules;
+use CaioMarcatti12\Core\Modules\ModulesEnum;
 use CaioMarcatti12\Env\Objects\Property;
+use CaioMarcatti12\Event\Interfaces\EventManagerInterface;
+use CaioMarcatti12\Logger\Log;
 use CaioMarcatti12\QueueManager\Interfaces\QueueManagerInterface;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -57,6 +62,10 @@ class RabbitMQAdapter implements QueueManagerInterface
                 $msg->ack();
             } catch (\Exception $e) {
                 $msg->reject();
+
+                if (Modules::isEnabled(ModulesEnum::LOG)) {
+                    Log::error('message consumed with error: '. $e->getMessage());
+                }
             }
         });
 
